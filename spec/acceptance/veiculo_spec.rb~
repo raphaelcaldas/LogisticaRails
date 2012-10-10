@@ -1,0 +1,35 @@
+# coding: utf-8
+
+require 'spec_helper'
+
+feature 'gerenciar veiculo' do
+
+  scenario 'incluir veiculo' do # , :javascript => true  do
+
+    visit new_veiculo_path
+
+    preencher_e_verificar_veiculo
+
+    #page.should have_content 'Pessoa cadastrado com sucesso'
+
+  end
+
+   def preencher_e_verificar_veiculo
+
+      fill_in 'Placa',  :with => "Luiz"
+
+      fill_in 'Hodometro', :with   => "Rua x"
+
+      fill_in 'Combustivel', :with   => "1212121"
+    
+ 
+      click_button 'Create Veiculo'
+
+      page.should have_content 'Placa: Luiz'
+
+      page.should have_content 'Hodometro: Rua x'
+      page.should have_content 'Combustivel: 1212121'
+
+   end
+end
+

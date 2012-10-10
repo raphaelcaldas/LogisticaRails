@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Placa:</b>
+  <%= @veiculo.placa %>
+</p>
+
+<p>
+  <b>Hodometro:</b>
+  <%= @veiculo.hodometro %>
+</p>
+
+<p>
+  <b>Combustivel:</b>
+  <%= @veiculo.combustivel %>
+</p>
+
+<p>
+  <b>Peso:</b>
+  <%= @veiculo.peso %>
+</p>
+
+
+<%= link_to 'Edit', edit_veiculo_path(@veiculo) %> |
+<%= link_to 'Back', veiculos_path %>
