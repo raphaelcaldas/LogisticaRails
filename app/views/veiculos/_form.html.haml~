@@ -1,0 +1,6 @@
+= semantic_form_for [@veiculo] do |form|
+  = form.input :placa, :label => 'Placa' 
+  = form.input :hodometro, :label => 'Hodometro'
+  = form.input :combustivel, :label => 'Combustivel'
+  = form.input :peso, :label => 'Peso Máximo'
+  = form.submit 'Salvar'

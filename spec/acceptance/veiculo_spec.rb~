@@ -14,22 +14,49 @@ feature 'gerenciar veiculo' do
 
   end
 
-   def preencher_e_verificar_veiculo
+  scenario 'alterar veiculo' do #, :javascript => true  do
 
-      fill_in 'Placa',  :with => "Luiz"
+    veiculo = FactoryGirl.create(:veiculo)
 
-      fill_in 'Hodometro', :with   => "Rua x"
+    visit edit_veiculo_path(veiculo)
 
-      fill_in 'Combustivel', :with   => "1212121"
+    preencher_e_verificar_veiculo
+
+
+
+  end
+
+  scenario 'excluir veiculo' do #, :javascript => true  do
+
+       veiculo = FactoryGirl.create(:veiculo)
+
+        visit veiculos_path
+
+        click_link 'Excluir'
+
+    
+
+  end
+
+  def preencher_e_verificar_veiculo
+
+      fill_in 'Placa',  :with => "KMS-1260"
+
+      fill_in 'Hodometro', :with   => "34.653"
+
+      fill_in 'Combustivel', :with   => "DIESEL"
+
+      fill_in 'Peso Máximo', :with   => "10.000 kg"
     
  
-      click_button 'Create Veiculo'
+      click_button 'Salvar'
 
-      page.should have_content 'Placa: Luiz'
+      page.should have_content 'Placa: KMS-1260'
 
-      page.should have_content 'Hodometro: Rua x'
-      page.should have_content 'Combustivel: 1212121'
+      page.should have_content 'Hodometro: 34.653'
+      page.should have_content 'Combustivel: DIESEL'
+      page.should have_content 'Peso Máximo: 10.000 kg'
 
-   end
+  end
 end
-
+	

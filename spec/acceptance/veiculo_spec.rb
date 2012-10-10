@@ -14,7 +14,31 @@ feature 'gerenciar veiculo' do
 
   end
 
-   def preencher_e_verificar_veiculo
+  scenario 'alterar veiculo' do #, :javascript => true  do
+
+    veiculo = FactoryGirl.create(:veiculo)
+
+    visit edit_veiculo_path(veiculo)
+
+    preencher_e_verificar_veiculo
+
+
+
+  end
+
+  scenario 'excluir veiculo' do #, :javascript => true  do
+
+       veiculo = FactoryGirl.create(:veiculo)
+
+        visit veiculos_path
+
+        click_link 'Excluir'
+
+    
+
+  end
+
+  def preencher_e_verificar_veiculo
 
       fill_in 'Placa',  :with => "KMS-1260"
 
@@ -25,7 +49,7 @@ feature 'gerenciar veiculo' do
       fill_in 'Peso', :with   => "10.000 kg"
     
  
-      click_button 'Create Veiculo'
+      click_button 'Salvar'
 
       page.should have_content 'Placa: KMS-1260'
 
@@ -33,6 +57,6 @@ feature 'gerenciar veiculo' do
       page.should have_content 'Combustivel: DIESEL'
       page.should have_content 'Peso: 10.000 kg'
 
-   end
+  end
 end
-
+	
