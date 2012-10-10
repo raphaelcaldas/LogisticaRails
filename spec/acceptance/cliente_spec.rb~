@@ -1,0 +1,61 @@
+# coding: utf-8
+
+require 'spec_helper'
+
+feature 'gerenciar cliente' do
+
+  scenario 'incluir cliente' do # , :javascript => true  do
+
+    visit new_cliente_path
+
+    preencher_e_verificar_cliente
+
+    #page.should have_content 'Pessoa cadastrado com sucesso'
+
+  end
+
+  scenario 'alterar cliente' do #, :javascript => true  do
+
+    cliente = FactoryGirl.create(:cliente)
+
+    visit edit_cliente_path(cliente)
+
+    preencher_e_verificar_cliente
+
+
+
+  end
+
+  scenario 'excluir cliente' do #, :javascript => true  do
+
+       cliente = FactoryGirl.create(:cliente)
+
+        visit clientes_path
+
+        click_link 'Excluir'
+
+    
+
+  end
+
+  def preencher_e_verificar_cliente
+
+      fill_in 'Nome',  :with => "KMS-1260"
+
+      fill_in 'Tipo Cliente', :with   => "34.653"
+
+      fill_in 'Cnpj/Cpf', :with   => "DIESEL"
+
+      fill_in 'Dados Cliente', :with   => "10.000 kg"
+    
+ 
+      click_button 'Salvar'
+
+      page.should have_content 'Nome: KMS-1260'
+      page.should have_content 'Tipo Cliente: 34.653'
+      page.should have_content 'Cnpj/Cpf: DIESEL'
+      page.should have_content 'Dados Cliente: 10.000 kg'
+
+  end
+end
+	

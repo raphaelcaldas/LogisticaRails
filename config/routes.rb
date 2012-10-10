@@ -1,4 +1,6 @@
 Logistica::Application.routes.draw do
+  resources :clientes
+
   resources :veiculos
 
   # The priority is based upon order of creation:
