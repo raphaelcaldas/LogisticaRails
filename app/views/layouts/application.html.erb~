@@ -30,8 +30,8 @@ Released   : 20120927
 		<ul>
 			<li class="current_page_item"><a href="/" accesskey="1" title="">Home</a></li>
 			<li><a href="clientes" accesskey="2" title="">Clientes</a></li>
-			<li><a href="veiculos" accesskey="3" title="">Veiculos</a></li>
-			<li><a href="motoristas" accesskey="4" title="">Motoristas</a></li>
+			<li><a href="#" accesskey="3" title="">Veiculos</a></li>
+			<li><a href="#" accesskey="4" title="">Motorista</a></li>
 		</ul>
 	</div>
 </div>
