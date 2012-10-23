@@ -8,7 +8,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
 	margin: 0;
 	padding: 0;
-	background: #30891B url(assets/img01.png) repeat;
+	background: #30891B url(img01.png) repeat;
 	font-family: 'Abel', sans-serif;
 	font-size: 15px;
 	color: #8F8F8F;
@@ -323,7 +323,7 @@ ul.style1 {
 
 ul.style1 li {
 	padding: 20px 0px 20px 0px;
-	border-top: 1px dashed #E6E7DC;
+	border-top: 1px dashed #FFFAFA;
 }
 
 ul.style1 a {
@@ -351,7 +351,7 @@ ul.style2 {
 
 ul.style2 li {
 	padding: 9px 0px 9px 0px;
-	border-top: 1px dashed #E6E7DC;
+	border-top: 1px dashed #FFFAFA;
 }
 
 ul.style2 .first {
