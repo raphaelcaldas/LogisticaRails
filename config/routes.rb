@@ -1,4 +1,6 @@
 Logistica::Application.routes.draw do
+  resources :motoristaos
+
   get "home/index"
   
   root :to=> "home#index"

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @motoristao.nome %>
+</p>
+
+<p>
+  <b>Cpf:</b>
+  <%= @motoristao.cpf %>
+</p>
+
+<p>
+  <b>Endereço:</b>
+  <%= @motoristao.endereco %>
+</p>
+
+<p>
+  <b>Telefone:</b>
+  <%= @motoristao.telefone %>
+</p>
+
+
+<%= link_to 'Edit', edit_motoristao_path(@motoristao) %> |
+<%= link_to 'Back', motoristaos_path %>

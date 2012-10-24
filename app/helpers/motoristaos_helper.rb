@@ -1,0 +1,2 @@
+module MotoristaosHelper
+end

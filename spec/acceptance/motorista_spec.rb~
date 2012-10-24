@@ -1,0 +1,63 @@
+# coding: utf-8
+
+require 'spec_helper'
+
+feature 'gerenciar motoristum' do
+
+  scenario 'incluir motoristum' do # , :javascript => true  do
+
+    visit new_motoristum_path
+
+    preencher_e_verificar_motoristum
+
+    #page.should have_content 'Pessoa cadastrado com sucesso'
+
+  end
+  scenario 'alterar motoristum' do #, :javascript => true  do
+
+    motoristum = FactoryGirl.create(:motoristum)
+
+    visit edit_motoristum_path(motoristum)
+
+    preencher_e_verificar_motoristum
+
+
+
+  end
+
+  scenario 'excluir motoristum' do #, :javascript => true  do
+
+       motoristum = FactoryGirl.create(:motoristum)
+
+        visit motorista_path
+        click_link 'Excluir'
+
+    
+
+  end
+
+
+
+  def preencher_e_verificar_motoristum
+
+      fill_in 'Codigo Motorista',  :with => "0001"
+
+      fill_in 'Nome', :with   => "Raphael"
+
+      fill_in 'Cpf', :with   => "123456789"
+
+      fill_in 'Endereco', :with   => "Rua A"
+
+      fill_in 'Telefone', :with   => "987654321"    
+ 
+      click_button 'Salvar'
+
+      page.should have_content 'Codigo Motorista: 0001'
+      page.should have_content 'Nome: Raphael'
+      page.should have_content 'Cpf: 123456789'
+      page.should have_content 'Endereco: Rua A'
+      page.should have_content 'Telefone: 987654321'
+
+  end
+end
+	
