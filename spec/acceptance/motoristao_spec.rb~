@@ -4,7 +4,7 @@ require 'spec_helper'
 
 feature 'gerenciar motoristao' do
 
-  scenario 'incluir motoristao' do  , :javascript => true  do
+  scenario 'incluir motoristao' do # , :javascript => true  do
 
     visit new_motoristao_path
 
@@ -13,7 +13,7 @@ feature 'gerenciar motoristao' do
     #page.should have_content 'Pessoa cadastrado com sucesso'
 
   end
-  scenario 'alterar motoristao' do , :javascript => true  do
+  scenario 'alterar motoristao' do #, :javascript => true  do
 
     motoristao = FactoryGirl.create(:motoristao)
 
@@ -25,7 +25,7 @@ feature 'gerenciar motoristao' do
 
   end
 
-  scenario 'excluir motoristao' do , :javascript => true  do
+  scenario 'excluir motoristao' do #, :javascript => true  do
 
        motoristao = FactoryGirl.create(:motoristao)
 

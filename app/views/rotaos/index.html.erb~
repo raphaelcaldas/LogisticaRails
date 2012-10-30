@@ -1,0 +1,27 @@
+<h1>Listing rotaos</h1>
+
+<table>
+  <tr>
+    <th>Trajeto</th>
+    <th>Motoristao</th>
+    <th>Veiculo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rotaos.each do |rotao| %>
+  <tr>
+    <td><%= rotao.trajeto %></td>
+    <td><%= rotao.motoristao %></td>
+    <td><%= rotao.veiculo %></td>
+    <td><%= link_to 'Show', rotao %></td>
+    <td><%= link_to 'Edit', edit_rotao_path(rotao) %></td>
+    <td><%= link_to 'Destroy', rotao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rotao', new_rotao_path %>

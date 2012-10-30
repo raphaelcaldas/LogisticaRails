@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Trajeto:</b>
+  <%= @ordemservico.rotao %>
+</p>
+
+<p>
+  <b>Nome:</b>
+  <%= @ordemservico.cliente %>
+</p>
+
+
+<%= link_to 'Edit', edit_ordemservico_path(@ordemservico) %> |
+<%= link_to 'Back', ordemservicos_path %>

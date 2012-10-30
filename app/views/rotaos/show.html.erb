@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Trajeto:</b>
+  <%= @rotao.trajeto %>
+</p>
+
+<p>
+  <b>Nome:</b>
+  <%= @rotao.motoristao.nome %>
+</p>
+
+<p>
+  <b>Placa:</b>
+  <%= @rotao.veiculo.placa %>
+</p>
+
+
+<%= link_to 'Edit', edit_rotao_path(@rotao) %> |
+<%= link_to 'Back', rotaos_path %>

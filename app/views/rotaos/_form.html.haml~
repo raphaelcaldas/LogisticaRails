@@ -1,0 +1,29 @@
+<%= form_for(@rotao) do |f| %>
+  <% if @rotao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rotao.errors.count, "error") %> prohibited this rotao from being saved:</h2>
+
+      <ul>
+      <% @rotao.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :trajeto %><br />
+    <%= f.text_field :trajeto %>
+  </div>
+  <div class="field">
+    <%= f.label :motoristao %><br />
+    <%= f.text_field :motoristao %>
+  </div>
+  <div class="field">
+    <%= f.label :veiculo %><br />
+    <%= f.text_field :veiculo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

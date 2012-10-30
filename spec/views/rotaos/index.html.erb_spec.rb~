@@ -1,0 +1,26 @@
+require 'spec_helper'
+
+describe "rotaos/index" do
+  before(:each) do
+    assign(:rotaos, [
+      stub_model(Rotao,
+        :descricao => "Descrição",
+        :motorista => nil,
+        :veiculo => nil
+      ),
+      stub_model(Rotao,
+        :descricao => "Descricao",
+        :motorista => nil,
+        :veiculo => nil
+      )
+    ])
+  end
+
+  it "renders a list of rotaos" do
+    render
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
+    assert_select "tr>td", :text => "Descrição".to_s, :count => 2
+    assert_select "tr>td", :text => nil.to_s, :count => 2
+    assert_select "tr>td", :text => nil.to_s, :count => 2
+  end
+end
