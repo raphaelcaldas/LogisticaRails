@@ -18,6 +18,35 @@ feature 'gerenciar ordemservico' do
   end
 
 
+scenario 'alterar ordemservico' do #, :javascript => true  do
+
+    rotao = FactoryGirl.create(:rotao, :trajeto => 'Cidade')
+    cliente = FactoryGirl.create(:cliente, :nome => 'Raphael')
+
+    ordemservico = FactoryGirl.create(:ordemservico,:rotao => rotao)
+    ordemservico = FactoryGirl.create(:ordemservico,:cliente => cliente)
+
+    visit edit_ordemservico_path(ordemservico)
+
+    preencher_e_verificar_ordemservico
+
+
+  end
+
+  scenario 'excluir ordemservico' do #, :javascript => true  do
+    
+    rotao = FactoryGirl.create(:rotao, :trajeto => 'Cidade')
+    cliente = FactoryGirl.create(:cliente, :nome => 'Raphael')
+
+    ordemservico = FactoryGirl.create(:ordemservico,:rotao => rotao)
+    ordemservico = FactoryGirl.create(:ordemservico,:cliente => cliente)
+
+    visit ordemservicos_path
+
+    click_link 'Excluir'
+    
+    
+  end
 
   def preencher_e_verificar_ordemservico
 
