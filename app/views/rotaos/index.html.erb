@@ -1,20 +1,20 @@
-<h1>Listing rotaos</h1>
+<br><h1>Listando Rotas</h1>
 
-<table>
+<table BORDER=1 BGCOLOR="white" width="100%">
   <tr>
-    <th>Trajeto</th>
-    <th>Motoristao</th>
-    <th>Veiculo</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th><font color="navy">Trajeto</font></th>
+    <th><font color="navy">Motorista</font></th>
+    <th><font color="navy">Veiculo</font></th>
+    
   </tr>
+
 
 <% @rotaos.each do |rotao| %>
   <tr>
-    <td><%= rotao.trajeto %></td>
-    <td><%= rotao.motoristao %></td>
-    <td><%= rotao.veiculo %></td>
+    <td><font color="green"><%= rotao.trajeto %></font></td>
+    <td><font color="green"><%= rotao.motoristao %></font></td>
+    <td><font color="green"><%= rotao.veiculo %></font></td>
+    </table><br>
     <td><%= link_to 'Mostrar', rotao %></td>
     <td><%= link_to 'Editar', edit_rotao_path(rotao) %></td>
     <td><%= link_to 'Excluir', rotao, method: :delete, data: { confirm: 'Tem certeza?' } %></td>

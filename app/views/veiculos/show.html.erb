@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<font color="white">
 <p>
   <b>Placa:</b>
   <%= @veiculo.placa %>
@@ -19,7 +20,7 @@
   <b>Peso:</b>
   <%= @veiculo.peso %>
 </p>
-
+</font>
 
 <%= link_to 'Editar', edit_veiculo_path(@veiculo) %> |
 <%= link_to 'Voltar', veiculos_path %>

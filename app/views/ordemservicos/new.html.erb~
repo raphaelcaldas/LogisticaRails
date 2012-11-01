@@ -2,4 +2,4 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Back', ordemservicos_path %>
+<%= link_to 'Voltar', ordemservicos_path %>

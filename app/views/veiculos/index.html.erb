@@ -1,28 +1,26 @@
-<h1>Listing veiculos</h1>
+<br><h1>Listing veiculos</h1>
 
-<table>
+<table BORDER=1 BGCOLOR="white" width="100%">
   <tr>
-    <th>Placa</th>
-    <th>Hodometro</th>
-    <th>Combustivel</th>
-    <th>Peso</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th><font color="navy">Placa</font></th>
+    <th><font color="navy">Hodometro</font></th>
+    <th><font color="navy">Combustivel</font></th>
+    <th><font color="navy">Peso</font></th>
+    
   </tr>
 
 <% @veiculos.each do |veiculo| %>
   <tr>
-    <td><%= veiculo.placa %></td>
-    <td><%= veiculo.hodometro %></td>
-    <td><%= veiculo.combustivel %></td>
-    <td><%= veiculo.peso %></td>
+    <td><font color="green"><%= veiculo.placa %></font></td>
+    <td><font color="green"><%= veiculo.hodometro %></font></td>
+    <td><font color="green"><%= veiculo.combustivel %></font></td>
+    <td><font color="green"><%= veiculo.peso %></font></td>
+    </table><br>
     <td><%= link_to 'Mostrar', veiculo %></td>
     <td><%= link_to 'Editar', edit_veiculo_path(veiculo) %></td>
     <td><%= link_to 'Excluir', veiculo, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
   </tr>
 <% end %>
-</table>
 
 <br />
 

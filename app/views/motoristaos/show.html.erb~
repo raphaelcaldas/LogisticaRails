@@ -21,5 +21,5 @@
 </p>
 
 
-<%= link_to 'Edit', edit_motoristao_path(@motoristao) %> |
-<%= link_to 'Back', motoristaos_path %>
+<%= link_to 'Editar', edit_motoristao_path(@motoristao) %> |
+<%= link_to 'Voltar', motoristaos_path %>

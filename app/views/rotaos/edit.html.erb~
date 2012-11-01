@@ -2,5 +2,5 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @rotao %> |
-<%= link_to 'Back', rotaos_path %>
+<%= link_to 'Mostrar', @rotao %> |
+<%= link_to 'Voltar', rotaos_path %>

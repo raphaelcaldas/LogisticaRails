@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<font color="white">
 <p>
   <b>Trajeto:</b>
   <%= @ordemservico.rotao.trajeto %>
@@ -9,7 +10,7 @@
   <b>Nome:</b>
   <%= @ordemservico.cliente.nome %>
 </p>
-
+</font>
 
 <%= link_to 'Editar', edit_ordemservico_path(@ordemservico) %> |
 <%= link_to 'Voltar', ordemservicos_path %>

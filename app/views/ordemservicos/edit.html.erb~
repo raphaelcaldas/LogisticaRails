@@ -2,5 +2,5 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @ordemservico %> |
-<%= link_to 'Back', ordemservicos_path %>
+<%= link_to 'Mostrar', @ordemservico %> |
+<%= link_to 'Voltar', ordemservicos_path %>

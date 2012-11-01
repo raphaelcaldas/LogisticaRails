@@ -1,22 +1,21 @@
-<h1>Listing motoristaos</h1>
+<h1>Listando Motoristas</h1>
 
-<table>
+<table BORDER=1 BGCOLOR="white" width="100%">
   <tr>
-    <th>Nome</th>
-    <th>Cpf</th>
-    <th>Endereco</th>
-    <th>Telefone</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th><font color="navy">Nome</font></th>
+    <th><font color="navy">Cpf</font></th>
+    <th><font color="navy">Endereco</font></th>
+    <th><font color="navy">Telefone</font></th>
+    
   </tr>
 
 <% @motoristaos.each do |motoristao| %>
   <tr>
-    <td><%= motoristao.nome %></td>
-    <td><%= motoristao.cpf %></td>
-    <td><%= motoristao.endereco %></td>
-    <td><%= motoristao.telefone %></td>
+    <td><font color="green"><%= motoristao.nome %></td>
+    <td><font color="green"><%= motoristao.cpf %></td>
+    <td><font color="green"><%= motoristao.endereco %></td>
+    <td><font color="green"><%= motoristao.telefone %></td>
+    </table><br>
     <td><%= link_to 'Mostrar', motoristao %></td>
     <td><%= link_to 'Editar', edit_motoristao_path(motoristao) %></td>
     <td><%= link_to 'Excluir', motoristao, method: :delete, data: { confirm: 'Tem certeza?' } %></td>

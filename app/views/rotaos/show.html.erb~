@@ -16,5 +16,5 @@
 </p>
 
 
-<%= link_to 'Edit', edit_rotao_path(@rotao) %> |
-<%= link_to 'Back', rotaos_path %>
+<%= link_to 'Editar', edit_rotao_path(@rotao) %> |
+<%= link_to 'Voltar', rotaos_path %>

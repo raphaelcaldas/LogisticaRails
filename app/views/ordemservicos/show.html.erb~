@@ -11,5 +11,5 @@
 </p>
 
 
-<%= link_to 'Edit', edit_ordemservico_path(@ordemservico) %> |
-<%= link_to 'Back', ordemservicos_path %>
+<%= link_to 'Editar', edit_ordemservico_path(@ordemservico) %> |
+<%= link_to 'Voltar', ordemservicos_path %>

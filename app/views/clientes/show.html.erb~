@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<font color="white">
 <p>
   <b>Nome:</b>
   <%= @cliente.nome %>
@@ -19,7 +20,7 @@
   <b>Dados Cliente:</b>
   <%= @cliente.dados %>
 </p>
+</font>
 
-
-<%= link_to 'Edit', edit_cliente_path(@cliente) %> |
-<%= link_to 'Back', clientes_path %>
+<%= link_to 'Editar', edit_cliente_path(@cliente) %> |
+<%= link_to 'Voltar', clientes_path %>

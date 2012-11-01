@@ -1,28 +1,28 @@
-<h1>Listing clientes</h1>
+<br>
+<h1>Listando clientes</h1>
 
-<table>
+<table BORDER=1 BGCOLOR="white" width="100%">
   <tr>
-    <th>Nome</th>
-    <th>Tipo</th>
-    <th>Cnpj</th>
-    <th>Dados</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th><font color="navy">Nome</font></th>
+    <th><font color="navy">Tipo</font></th>
+    <th><font color="navy">Cnpj</font></th>
+    <th><font color="navy">Dados</font></th>
+    
   </tr>
 
 <% @clientes.each do |cliente| %>
   <tr>
-    <td><%= cliente.nome %></td>
-    <td><%= cliente.tipo %></td>
-    <td><%= cliente.cnpj %></td>
-    <td><%= cliente.dados %></td>
+    <td><font color="green"><%= cliente.nome %></td></font>
+    <td><font color="green"><%= cliente.tipo %></td></font>
+    <td><font color="green"><%= cliente.cnpj %></td></font>
+    <td><font color="green"><%= cliente.dados %></td></font></table>
+    <br>
     <td><%= link_to 'Mostrar', cliente %></td>
     <td><%= link_to 'Editar', edit_cliente_path(cliente) %></td>
     <td><%= link_to 'Excluir', cliente, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
   </tr>
 <% end %>
-</table>
+
 
 <br />
 

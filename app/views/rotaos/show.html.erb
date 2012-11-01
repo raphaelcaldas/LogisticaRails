@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<font color="white">
 <p>
   <b>Trajeto:</b>
   <%= @rotao.trajeto %>
@@ -14,7 +15,7 @@
   <b>Placa:</b>
   <%= @rotao.veiculo.placa %>
 </p>
-
+</font>
 
 <%= link_to 'Editar', edit_rotao_path(@rotao) %> |
 <%= link_to 'Voltar', rotaos_path %>

@@ -1,25 +1,24 @@
-<h1>Listing ordemservicos</h1>
+<h1>Listando Ordens de Servicos</h1>
 
-<table>
+<table BORDER=1 BGCOLOR="white" width="100%">
   <tr>
-    <th>Rotao</th>
-    <th>Cliente</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th><font color="navy">Rota</font></th>
+    <th><font color="navy">Cliente</font></th>
   </tr>
+
 
 <% @ordemservicos.each do |ordemservico| %>
   <tr>
-    <td><%= ordemservico.rotao %></td>
-    <td><%= ordemservico.cliente %></td>
-    <td><%= link_to 'Show', ordemservico %></td>
-    <td><%= link_to 'Edit', edit_ordemservico_path(ordemservico) %></td>
-    <td><%= link_to 'Excluir', ordemservico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><font color="green"><%= ordemservico.rotao %></font></td>
+    <td><font color="green"><%= ordemservico.cliente %></font></td>
+    </table><br>
+    <td><%= link_to 'Mostrar', ordemservico %></td>
+    <td><%= link_to 'Editar', edit_ordemservico_path(ordemservico) %></td>
+    <td><%= link_to 'Excluir', ordemservico, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Ordemservico', new_ordemservico_path %>
+<%= link_to 'Nova Ordem de Serviço', new_ordemservico_path %>
