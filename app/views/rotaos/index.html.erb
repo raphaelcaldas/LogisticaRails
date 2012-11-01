@@ -15,13 +15,13 @@
     <td><%= rotao.trajeto %></td>
     <td><%= rotao.motoristao %></td>
     <td><%= rotao.veiculo %></td>
-    <td><%= link_to 'Show', rotao %></td>
-    <td><%= link_to 'Edit', edit_rotao_path(rotao) %></td>
-    <td><%= link_to 'Excluir', rotao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Mostrar', rotao %></td>
+    <td><%= link_to 'Editar', edit_rotao_path(rotao) %></td>
+    <td><%= link_to 'Excluir', rotao, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Rotao', new_rotao_path %>
+<%= link_to 'Nova Rota', new_rotao_path %>

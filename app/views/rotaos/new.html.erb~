@@ -2,4 +2,4 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Voltar', rotaos_path %>
+<%= link_to 'Back', rotaos_path %>

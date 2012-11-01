@@ -17,7 +17,7 @@
     <td><%= rotao.veiculo %></td>
     <td><%= link_to 'Show', rotao %></td>
     <td><%= link_to 'Edit', edit_rotao_path(rotao) %></td>
-    <td><%= link_to 'Destroy', rotao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Excluir', rotao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>

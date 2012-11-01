@@ -6,17 +6,17 @@
 </p>
 
 <p>
-  <b>Tipo:</b>
+  <b>Tipo Cliente:</b>
   <%= @cliente.tipo %>
 </p>
 
 <p>
-  <b>Cnpj:</b>
+  <b>Cnpj/Cpf:</b>
   <%= @cliente.cnpj %>
 </p>
 
 <p>
-  <b>Dados:</b>
+  <b>Dados Cliente:</b>
   <%= @cliente.dados %>
 </p>
 

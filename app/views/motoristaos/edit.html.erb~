@@ -1,0 +1,6 @@
+<h1>Editing motoristao</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @motoristao %> |
+<%= link_to 'Back', motoristaos_path %>

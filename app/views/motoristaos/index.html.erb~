@@ -4,7 +4,7 @@
   <tr>
     <th>Nome</th>
     <th>Cpf</th>
-    <th>Endereço</th>
+    <th>Endereco</th>
     <th>Telefone</th>
     <th></th>
     <th></th>
@@ -17,13 +17,13 @@
     <td><%= motoristao.cpf %></td>
     <td><%= motoristao.endereco %></td>
     <td><%= motoristao.telefone %></td>
-    <td><%= link_to 'Show', motoristao %></td>
-    <td><%= link_to 'Edit', edit_motoristao_path(motoristao) %></td>
-    <td><%= link_to 'Excluir', motoristao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Mostrar', motoristao %></td>
+    <td><%= link_to 'Editar', edit_motoristao_path(motoristao) %></td>
+    <td><%= link_to 'Excluir', motoristao, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Motoristao', new_motoristao_path %>
+<%= link_to 'Novo Motorista', new_motoristao_path %>

@@ -13,13 +13,13 @@
   <tr>
     <td><%= ordemservico.rotao %></td>
     <td><%= ordemservico.cliente %></td>
-    <td><%= link_to 'Show', ordemservico %></td>
-    <td><%= link_to 'Edit', edit_ordemservico_path(ordemservico) %></td>
-    <td><%= link_to 'Excluir', ordemservico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Mostrar', ordemservico %></td>
+    <td><%= link_to 'Editar', edit_ordemservico_path(ordemservico) %></td>
+    <td><%= link_to 'Excluir', ordemservico, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Ordemservico', new_ordemservico_path %>
+<%= link_to 'Nova Ordem de Serviço', new_ordemservico_path %>

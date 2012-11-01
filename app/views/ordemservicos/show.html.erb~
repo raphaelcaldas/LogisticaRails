@@ -2,12 +2,12 @@
 
 <p>
   <b>Trajeto:</b>
-  <%= @ordemservico.rotao %>
+  <%= @ordemservico.rotao.trajeto %>
 </p>
 
 <p>
   <b>Nome:</b>
-  <%= @ordemservico.cliente %>
+  <%= @ordemservico.cliente.nome %>
 </p>
 
 

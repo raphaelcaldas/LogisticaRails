@@ -1,0 +1,6 @@
+<h1>Editing rotao</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @rotao %> |
+<%= link_to 'Back', rotaos_path %>

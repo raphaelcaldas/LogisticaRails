@@ -29,9 +29,11 @@ Released   : 20120927
 	<div id="menu">
 		<ul>
 			<li class="current_page_item"><a href="/" accesskey="1" title="">Home</a></li>
-			<li><a href="clientes" accesskey="2" title="">Clientes</a></li>
-			<li><a href="veiculos" accesskey="3" title="">Veiculos</a></li>
-			<li><a href="motoristaos" accesskey="4" title="">Motoristas</a></li>
+			<li><a href="http://localhost:3000/clientes" accesskey="2" title="">Clientes</a></li>
+			<li><a href="http://localhost:3000/veiculos" accesskey="3" title="">Veiculos</a></li>
+			<li><a href="http://localhost:3000/motoristaos" accesskey="4" title="">Motoristas</a></li>
+			<li><a href="http://localhost:3000/rotaos" accesskey="5" title="">Rotas</a></li>
+                        <li><a href="http://localhost:3000/ordemservicos" accesskey="6" title="">OS</a></li>
 		</ul>
 	</div>
 </div>
@@ -39,7 +41,7 @@ Released   : 20120927
 <%= yield %>
 
 <div id="footer">
-	<p>Copyright (c) 2012 fastlogistica.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org">FCT</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+	<p>Copyright (c) 2012 fastlogistica.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org">FCT</a>. Photos by <a href="https://www.facebook.com/raphaelcaldas021/">Fotogrph</a>.</p>
 </div>
 </body>
 </html>	

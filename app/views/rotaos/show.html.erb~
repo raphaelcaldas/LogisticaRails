@@ -6,12 +6,12 @@
 </p>
 
 <p>
-  <b>Motoristao:</b>
+  <b>Nome:</b>
   <%= @rotao.motoristao.nome %>
 </p>
 
 <p>
-  <b>Veiculo:</b>
+  <b>Placa:</b>
   <%= @rotao.veiculo.placa %>
 </p>
 
